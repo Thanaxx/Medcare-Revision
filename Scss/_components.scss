@@ -1,0 +1,45 @@
+$green: #84AD7C;
+$dark: #1E1E1E;
+$white: #FFFFFF;
+$grey: #565656;
+$heading: 40px;
+
+@mixin  absolute {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+@mixin pagepadding {
+    display: flex;
+    height: auto;
+}
+@mixin pad {
+    padding: 90px 90px;
+}
+@mixin button {
+    border: none;
+    outline: none;
+    background-color: $green;
+    padding: 7px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    a{
+        color: $white;
+        
+        &:hover{
+            color: $grey;
+        }
+    }
+    
+}
+
+@mixin  shadow {
+    box-shadow: 0px 3px 7px 3px #dfdfdf;
+}
+
+//mobile
+@mixin mobilepad {
+    padding: 50px 20px;
+}

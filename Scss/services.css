@@ -1,0 +1,81 @@
+.medcare-services {
+  padding: 90px 90px;
+}
+
+@media screen and (max-width: 760px) {
+  .medcare-services {
+    padding: 50px 20px;
+  }
+}
+
+.medcare-services h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #1E1E1E;
+}
+
+.medcare-services .services-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 760px) {
+  .medcare-services .services-name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 0;
+  }
+}
+
+.medcare-services .services-name .service {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0px 15px;
+}
+
+@media screen and (max-width: 760px) {
+  .medcare-services .services-name .service {
+    margin: 15px;
+  }
+}
+
+.medcare-services .services-name .service img {
+  width: 100%;
+}
+
+.medcare-services .services-name .service p {
+  padding: 10px 0;
+  text-align: justify;
+  color: #565656;
+}
+
+.medcare-services .services-name .service button {
+  border: none;
+  outline: none;
+  background-color: #84AD7C;
+  padding: 7px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.medcare-services .services-name .service button a {
+  color: #FFFFFF;
+}
+
+.medcare-services .services-name .service button a:hover {
+  color: #565656;
+}
+
+.medcare-services .services-name .service button a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=services.css.map */

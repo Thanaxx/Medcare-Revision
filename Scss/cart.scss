@@ -1,0 +1,128 @@
+@import "./components";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.medcart{
+    text-align: center;
+    padding-top: 55px;
+    font-size: 25px;
+    color: $green;
+}
+
+.med{
+    display: flex;
+    @include pad();
+
+    @media screen and (max-width:760px) {
+        flex-direction: column;
+        @include mobilepad();
+    }
+
+    .added-items{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .items{
+            display: flex;
+            margin: 15px;
+
+            img{
+                width: 90px;
+                margin: auto;
+            }
+            h2{
+                font-size: 18px;
+                margin: auto;
+            }
+            h1{
+                font-size: 22px;
+                margin: auto;
+            }
+            .remove{
+                margin: auto;
+
+                button{
+                    padding: 8px;
+                    border: none;
+                    outline: none;
+                    background-color: $green;
+                    border-radius: 5px;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+
+    .med-form{
+        flex: 1;
+        padding: 15px;
+
+        @media screen and (max-width:760px) {
+            padding: 0px;
+        }
+
+        form{
+            background-color: $dark;
+            width: 470px;
+            margin: auto;
+            padding: 20px 40px;
+            color: white;
+
+            @media screen and (max-width:760px) {
+                width: 450px;
+            }
+            
+
+            h1{
+                text-align: center;
+                padding: 15px 0;
+            }
+            
+            label{
+                color: white;
+            }
+
+            input[type="text"], input[type="email"]{
+                width: 100%;
+                padding: 8px;
+                color: $white;
+                border: none;
+                outline: none;
+                margin: 10px 0;
+                background-color: #414141be;
+            }
+
+            .pay{
+                text-align: center;
+                margin: 15px 0;
+
+                button{
+                    width: 100%;
+                    padding: 8px;
+                    margin: 15px 0;
+                    cursor: pointer;
+
+                    &:first-child{
+                        background-color: $green;
+                        color: $white;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+}
+    
+// form

@@ -1,0 +1,90 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.medcare-about {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 760px) {
+  .medcare-about {
+    min-height: 150vh;
+  }
+}
+
+.medcare-about .about-background {
+  background-color: #84AD7C;
+  padding: 90px 90px 0px 90px;
+  height: 60vh;
+}
+
+@media screen and (max-width: 760px) {
+  .medcare-about .about-background {
+    padding: 90px 20px 0px 20px;
+  }
+}
+
+.medcare-about .about-background h1 {
+  text-align: center;
+  color: #1E1E1E;
+  font-weight: lighter;
+  font-size: 55px;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+}
+
+.medcare-about .about-background .about-info {
+  background-color: #1E1E1E;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  display: flex;
+}
+
+@media screen and (max-width: 760px) {
+  .medcare-about .about-background .about-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.medcare-about .about-background .about-info .about-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+}
+
+.medcare-about .about-background .about-info .about-image img {
+  width: 100%;
+}
+
+.medcare-about .about-background .about-info .about-description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto;
+}
+
+.medcare-about .about-background .about-info .about-description p {
+  color: #FFFFFF;
+  font-weight: lighter;
+  text-align: justify;
+  color: #FFFFFF;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 760px) {
+  .medcare-about .about-background .about-info .about-description p {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

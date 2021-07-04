@@ -1,0 +1,251 @@
+@import "./components";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 40px 0px 40px;
+    
+    .medcare-logo{
+        flex: 1;
+
+        img{
+            width: 80px;
+        }
+    }
+
+    // medcare-bar
+    .medcare-icon{
+        display: none;
+        position: absolute;
+        top: 22px;
+        right: 30px;
+
+        @media screen and(max-width: 760px){
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+    .medcare-links{
+        text-align: right;
+        flex: 2;
+
+        @media screen and(max-width: 760px){
+            display: none;
+        }
+
+        a{
+            padding: 0px 15px;
+            color: $dark;
+            text-decoration: none;
+            font-size: 18px;
+
+            &:hover{
+                color: $green;
+            }
+        }
+
+        button{
+            @include button();
+            @include shadow();
+        }
+    }
+}
+
+.sidebar-wrapper{
+    display: none;
+}
+
+@media  screen and (max-width:760px) {
+        // sidebar
+
+    .sidebar-wrapper{
+        display: block;
+        background-color: #ffffff;
+        width: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transition: 0.3s ease-out;
+
+        .close-icon{
+            float: right;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: 0.3s ease-in;
+
+            i{
+                color: $dark;
+                cursor: pointer;
+            }
+        }
+
+        .medcare-sidebar-links{
+            margin: 80px 20px;
+
+            a{
+                display: block;
+                text-align: center;
+                padding: 20px 0;
+                text-decoration: none;
+                font-size: 18px;
+                color: $green;
+                margin: 10px 0;
+
+            }
+
+            :hover{
+                background-color: #abaca960;
+            }
+
+            .sidebar-button{
+                text-align: center;
+
+                button{
+                    width: 50%;
+                    border: none;
+                    outline: none;
+                    background-color: $green;
+                    border-radius: 5px;
+                    
+                    :hover{
+                        background-color: #ffffff00;
+                    }
+
+                    a{
+                        color: white;
+                        padding: 10px 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.medcare-coverpage{
+    @include pagepadding();
+    @include pad();
+
+    @media screen and(max-width: 760px){
+        flex-direction: column;
+        @include mobilepad();
+    }
+    
+
+    .left-cover{
+        margin: auto;
+        flex: 2;
+
+        .left-title{
+            font-size: 65px;
+            font-weight: bolder;
+            color: $dark;
+
+            @media screen and(max-width: 760px){
+                font-size: 45px;
+            }
+
+        }
+        .left-tagline{
+            padding: 10px 0;
+            font-size: 20px;
+            font-weight: lighter;
+            color: $grey;
+        }
+        button{
+            @include button();
+            padding: 10px 30px;
+            margin-top: 15px;
+            @include shadow();
+
+            a{
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .right-cover{
+        margin: auto;
+        flex: 1;
+
+        img{
+            width: 100%;
+            padding-top: 20px;
+
+            @media screen and(max-width: 760px){
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+
+// APPOINTMENT
+.medcare-appoint{
+    @include pad();
+    text-align: center;
+
+    @media screen and (max-width:760px){
+        @include mobilepad();
+    }
+
+    .get-started{
+        button{
+            width: 50%;
+            @include button();
+            border-radius: 5px;
+            padding: 15px 0;
+            font-size: 20px;
+            letter-spacing: 2px;
+            margin: 30px 0px;
+            cursor: pointer;
+
+            @media screen and (max-width:760px){
+                width: 100%;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+        }
+    }
+}
+
+
+// footer
+footer{
+    background-color: $dark;
+    text-align: center;
+    padding: 30px 0;
+    line-height: 30px;
+
+    img{
+        width: 80px;
+    }
+    p{
+        color: white;
+    }
+
+    .icons{
+        a{
+            color: $white;
+            padding: 5px 15px 0px 15px;
+            font-size: 25px;
+        }
+    }
+}

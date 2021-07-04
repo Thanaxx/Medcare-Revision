@@ -1,0 +1,73 @@
+@import "./components";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.medcare-about{
+    min-height: 100vh;
+
+    @media screen and (max-width:760px) {
+        min-height: 150vh;
+    }
+
+    .about-background{
+        background-color: $green;
+        padding: 90px 90px 0px 90px;
+        height: 60vh;
+
+        @media screen and (max-width:760px) {
+            padding: 90px 20px 0px 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: $dark;
+            font-weight: lighter;
+            font-size: 55px;
+            letter-spacing: 1px;
+            padding-bottom: 30px;
+        }
+
+        .about-info{
+            background-color: $dark;
+            padding: 50px;
+            @include pagepadding();
+            display: flex;
+
+            @media screen and (max-width:760px) {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .about-image{
+                flex: 1;
+                padding: 10px;
+                img{
+                    width: 100%;
+                }
+            }
+            .about-description{
+                flex: 1;
+                margin: auto;
+
+                p{
+                    color: $white;
+                    font-weight: lighter;
+                    text-align: justify;
+                    color: $white;
+                    line-height: 22px;
+
+                    @media screen and (max-width:760px) {
+                        font-size: 16px;
+                    }
+                }
+
+                @media screen and (max-width:760px) {
+                    
+                }
+            }
+        }
+    }
+}
